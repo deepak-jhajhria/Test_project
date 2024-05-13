@@ -1,7 +1,9 @@
+import BtnArrow from '../../assets/images/svg/btnArrow.svg'
+
 export const SectionTitle = (props) => {
     return (
         <div className="flex justify-center">
-            <p className="relative inline-block font-medium text-black uppercase font-Poppins text-md sectionTitle tracking-[5.1px]">{props.title}</p>
+            <p className={`relative inline-block font-medium text-black uppercase font-Poppins text-md sectionTitle tracking-[5.1px] ${props.className}`}>{props.title}</p>
         </div>
     )
 }
@@ -13,5 +15,10 @@ export const SectionHeading = (props) => {
 export const Description = (props) => {
     return (
         <p className={` font-Poppins font-normal text-md text-gray30 ${props.className}`}>{props.description}</p>
+    )
+}
+export const CommonBtn = (props) => {
+    return (
+        <button className={`flex items-center py-[15px] font-Poppins text-md sm:text-lg font-medium text-white border border-white rounded-full px-7 ${props.className}`}>{props.btnName}<img src={BtnArrow} alt="btnArrow" /></button>
     )
 }
