@@ -28,7 +28,7 @@ const Services = () => {
                         pagination={{ el: ".swiper-pagination", type: "bullets", bulletActiveClass: "swiper-pagination-bullet-active", }}>
                         {
                             serviceSecData.map((item, index) => (
-                                <SwiperSlide key={index}>
+                                <SwiperSlide key={index} className="serviceSecSlide">
                                     <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
                                         <div className="flex flex-col max-w-[525px] items-center lg:items-start">
                                             <h3 className="font-bold text-orangeRed opacity-10 font-Geometric text-8xl2">{item.id}</h3>

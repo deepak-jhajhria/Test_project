@@ -3,7 +3,10 @@ import AboutUs from './components/AboutUs';
 import BestExperienceSec from './components/BestExperienceSec';
 import ChooseUs from './components/ChooseUs';
 import HeroSec from './components/HeroSec';
+import OurExperienceSec from './components/OurExperienceSec';
+import PortfolioSec from './components/PortfolioSec';
 import Services from './components/Services';
+import TheNewsSec from './components/TheNewsSec';
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <AboutUs />
       <Services />
       <BestExperienceSec />
+      <TheNewsSec />
+      <OurExperienceSec />
+      <PortfolioSec />
     </div>
   );
 }

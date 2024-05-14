@@ -19,6 +19,6 @@ export const Description = (props) => {
 }
 export const CommonBtn = (props) => {
     return (
-        <button className={`flex items-center py-[13px] bg-orangeRed font-Poppins text-md sm:text-lg font-medium text-white border border-white rounded-full px-[26px] ${props.className}`}>{props.btnName}<img src={BtnArrow} alt="btnArrow" /></button>
+        <button className={`flex items-center text-nowrap py-[13px] bg-orangeRed font-Poppins text-md sm:text-lg font-medium text-white border border-white rounded-full px-[26px] ${props.className}`}>{props.btnName}<img className={`${props.arrowClassName}`} src={BtnArrow} alt="btnArrow" /></button>
     )
 }
