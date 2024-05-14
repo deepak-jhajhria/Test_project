@@ -1,13 +1,10 @@
-import { useState } from "react";
 import { SectionHeading, SectionTitle } from "./common/Common"
 import { experienceSecData } from "./common/Helper";
 import { PlayBtn } from "./common/Icons";
+import { useTabNavigation } from "./common/Hooks";
 
 const BestExperienceSec = () => {
-    const [activeTab, setActiveTab] = useState(3);
-    const handleTabClick = (index) => {
-        setActiveTab(index);
-    };
+    const { activeTab, handleTabClick } = useTabNavigation(3);
     return (
         <section className="bg-black sm:mx-6 sm:rounded-xl">
             <div className="container py-10 sm:py-12 md:py-16 lg:py-[77px]">

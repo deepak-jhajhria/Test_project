@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Description, SectionHeading, SectionTitle } from "./common/Common"
-import { useCallback, useRef } from "react";
+import {  useRef } from "react";
 import { EffectFade, Pagination, Virtual } from "swiper/modules";
 import { serviceSecData } from "./common/Helper";
 import serviceSliderImg from '../assets/images/webp/serviceSecImg.png'
@@ -8,23 +8,17 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import { LeftArrow, RightArrow } from "./common/Icons";
+import { useSliderNavigation } from "./common/Hooks";
 const Services = () => {
-    const sliderRefSecond = useRef(null);
-    const handlePrev = useCallback(() => {
-        if (!sliderRefSecond.current) return;
-        sliderRefSecond.current.swiper.slidePrev();
-    }, []);
-    const handleNext = useCallback(() => {
-        if (!sliderRefSecond.current) return;
-        sliderRefSecond.current.swiper.slideNext();
-    }, []);
+    const sliderRef = useRef(null);
+    const { handlePrev, handleNext } = useSliderNavigation(sliderRef);
     return (
         <section>
             <div className="container max-w-[1295px] py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[150px] relative md:px-20">
                 <SectionTitle title='Services' />
                 <SectionHeading className='pt-4 text-center' headingBoldLeft='Your' headingLight='Gateway to' headingBoldRight='Aerial Excellence' />
                 <div className="my-6 sm:my-10 md:my-[50px]">
-                    <Swiper ref={sliderRefSecond} modules={[EffectFade, Virtual, Pagination]} effect={'fade'} slidesPerView={1} loop={true}
+                    <Swiper ref={sliderRef} modules={[EffectFade, Virtual, Pagination]} effect={'fade'} slidesPerView={1} loop={true}
                         pagination={{ el: ".swiper-pagination", type: "bullets", bulletActiveClass: "swiper-pagination-bullet-active", }}>
                         {
                             serviceSecData.map((item, index) => (

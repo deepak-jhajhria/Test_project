@@ -1,20 +1,14 @@
-import { useCallback, useRef } from "react";
+import { useRef } from "react";
 import { Description, SectionHeading, SectionTitle } from "./common/Common";
 import { LeftArrow, RightArrow } from "./common/Icons";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Pagination, Virtual } from "swiper/modules";
+import { Virtual } from "swiper/modules";
 import { theNewsSecData } from "./common/Helper";
+import { useSliderNavigation } from "./common/Hooks";
 
 const TheNewsSec = () => {
-    const sliderRefSecond = useRef(null);
-    const handlePrev = useCallback(() => {
-        if (!sliderRefSecond.current) return;
-        sliderRefSecond.current.swiper.slidePrev();
-    }, []);
-    const handleNext = useCallback(() => {
-        if (!sliderRefSecond.current) return;
-        sliderRefSecond.current.swiper.slideNext();
-    }, []);
+    const sliderRef = useRef(null);
+    const { handlePrev, handleNext } = useSliderNavigation(sliderRef);
     return (
         <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[150px]">
             <div className="container">
@@ -28,7 +22,7 @@ const TheNewsSec = () => {
                         <button onClick={handleNext} className='flex items-center justify-center w-10 h-10 duration-300 border border-black rounded-full group next-arrow hover:bg-orangeRed hover:border-orangeRed'><RightArrow /></button>
                     </div>
                 </div>
-                <Swiper className="mt-5 sm:mt-9" ref={sliderRefSecond} spaceBetween={24} modules={[ Virtual, Pagination]} slidesPerView={1} loop={true}
+                <Swiper className="mt-5 sm:mt-9" ref={sliderRef} spaceBetween={24} modules={[Virtual]} slidesPerView={1} loop={true}
                     breakpoints={{
                         576: { slidesPerView: 2, }
                     }}>

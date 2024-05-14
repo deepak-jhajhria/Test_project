@@ -1,14 +1,14 @@
-import { useCallback, useRef } from "react";
+import { useRef } from "react";
 import { Description, SectionHeading, SectionTitle } from "./common/Common"
 import { LeftArrow, RightArrow } from "./common/Icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { thePortfolioSecData } from "./common/Helper";
-import { Pagination, Virtual } from "swiper/modules";
+import { Virtual } from "swiper/modules";
+import { useSliderNavigation } from "./common/Hooks";
 
 const PortfolioSec = () => {
-    const sliderRefSecond = useRef(null);
-    const handlePrev = useCallback(() => { if (!sliderRefSecond.current) return; sliderRefSecond.current.swiper.slidePrev(); }, []);
-    const handleNext = useCallback(() => { if (!sliderRefSecond.current) return; sliderRefSecond.current.swiper.slideNext(); }, []);
+    const sliderRef = useRef(null);
+    const { handlePrev, handleNext } = useSliderNavigation(sliderRef);
     return (
         <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[150px]">
             <div className="container ">
@@ -24,7 +24,7 @@ const PortfolioSec = () => {
                 </div>
             </div>
             <div className="ml-5 mt-6 sm:mt-10 md:mt-[50px] min-h-[603px]">
-                <Swiper ref={sliderRefSecond} spaceBetween={16} modules={[Virtual, Pagination]} slidesPerView={1} loop={true}
+                <Swiper ref={sliderRef} spaceBetween={16} modules={[Virtual]} slidesPerView={1} loop={true}
                     breakpoints={{ 576: { slidesPerView: 2, }, 768: { slidesPerView: 4, }, }}>
                     {thePortfolioSecData.map((item, index) => (
                         <SwiperSlide key={index} className="w-full max-w-[362px] !h-auto">

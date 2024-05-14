@@ -2,25 +2,19 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { SectionHeading } from "./common/Common"
 import { LeftArrow, RightArrow } from "./common/Icons"
 import { ourClientData } from "./common/Helper"
-import { useCallback, useRef } from "react"
+import { useRef } from "react"
 import { Virtual } from "swiper/modules"
+import { useSliderNavigation } from "./common/Hooks"
 
 const OurClientSec = () => {
-    const sliderRefSecond = useRef(null);
-    const handlePrev = useCallback(() => {
-        if (!sliderRefSecond.current) return;
-        sliderRefSecond.current.swiper.slidePrev();
-    }, []);
-    const handleNext = useCallback(() => {
-        if (!sliderRefSecond.current) return;
-        sliderRefSecond.current.swiper.slideNext();
-    }, []);
+    const sliderRef = useRef(null);
+    const { handlePrev, handleNext } = useSliderNavigation(sliderRef);
     return (
         <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:pt-[150px] xl:pb-[138px]">
             <div className="container max-w-[1295px] relative md:px-20">
                 <SectionHeading className='pt-4 text-center' headingLight='Our' headingBoldRight='Clients' />
                 <div className="relative mt-6 sm:mt-10">
-                    <Swiper ref={sliderRefSecond} spaceBetween={27} modules={[Virtual]} slidesPerView={5} loop={true}>
+                    <Swiper ref={sliderRef} spaceBetween={27} modules={[Virtual]} slidesPerView={5} loop={true}>
                         {ourClientData.map((item, index) => (
                             <SwiperSlide key={index} className="p-[22px] border border-lightGrey rounded-md2">
                                 <div className="flex items-center justify-center min-h-[111px]">

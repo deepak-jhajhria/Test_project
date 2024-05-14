@@ -1,27 +1,21 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Description, SectionHeading, SectionTitle } from "./common/Common"
-import { useCallback, useRef } from "react";
+import {  useRef } from "react";
 import { Virtual } from "swiper/modules";
 import { reviewSecData } from "./common/Helper";
 import { LeftArrow, RightArrow } from "./common/Icons";
+import { useSliderNavigation } from "./common/Hooks";
 
 const ReviewsSec = () => {
-    const sliderRefSecond = useRef(null);
-    const handlePrev = useCallback(() => {
-        if (!sliderRefSecond.current) return;
-        sliderRefSecond.current.swiper.slidePrev();
-    }, []);
-    const handleNext = useCallback(() => {
-        if (!sliderRefSecond.current) return;
-        sliderRefSecond.current.swiper.slideNext();
-    }, []);
+    const sliderRef = useRef(null);
+    const { handlePrev, handleNext } = useSliderNavigation(sliderRef);
     return (
         <section className="py-10 sm:py-11 md:py-12 lg:py-[67px]">
             <div className="container max-w-[1295px] relative md:px-20">
                 <SectionTitle title='Reviews' />
                 <SectionHeading className='pt-4 text-center' headingBoldLeft='Our' headingLight='Costumers Say Something' headingBoldRight='About Us' />
                 <div className="mt-6 sm:mt-10 md:mt-14 lg:mt-[76px] relative">
-                    <Swiper ref={sliderRefSecond} spaceBetween={27} modules={[Virtual]} slidesPerView={3} loop={true}>
+                    <Swiper ref={sliderRef} spaceBetween={27} modules={[Virtual]} slidesPerView={3} loop={true}>
                         {reviewSecData.map((item, index) => (
                             <SwiperSlide key={index} className="p-[22px] border border-black border-opacity-10 rounded-md2">
                                 <div className="flex flex-col gap-[13px]">
