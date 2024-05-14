@@ -1,6 +1,6 @@
 import { navLinkData } from "./common/Helper";
 import { useOverflowHidden } from "./common/Hooks";
-import Logo from '../assets/images/webp/logo.png'
+import Logo from '../assets/images/webp/logo.webp'
 import BtnArrow from '../assets/images/svg/btnArrow.svg'
 import { Twirl as Hamburger } from 'hamburger-react';
 

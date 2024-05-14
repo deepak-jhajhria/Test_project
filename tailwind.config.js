@@ -51,14 +51,17 @@ module.exports = {
       },
       colors: {
         'orangeRed': '#E67E22',
+        'orangeRedLight': '#F2BE90',
         'gray30': '#4D4D4D',
         'gainsBore': '#E6E6E6',
         'paleOrange': '#FFF7EF',
         'lightGrey': '#F2F2F2',
+        'lightGrey30': '#E6E6E6',
         'darkGrey': '#221305',
+        'darkBlack': '#111111',
       },
       backgroundImage: {
-        "bgHero": "url('../src/assets/images/webp/heroSecBgImg.png')",
+        "bgHero": "url('../src/assets/images/webp/heroSecBgImg.webp')",
       },
       backgroundSize: {
         "BgSize": "100% 100%"

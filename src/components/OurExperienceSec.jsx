@@ -1,4 +1,4 @@
-import droneProfessionalImage from '../assets/images/webp/ourExpertiseSecImg.png'
+import droneProfessionalImage from '../assets/images/webp/ourExpertiseSecImg.webp'
 import { CommonBtn, Description, SectionHeading, SectionTitle } from './common/Common'
 const OurExperienceSec = () => {
     return (

@@ -1,4 +1,3 @@
-import { useSwiper } from "swiper/react"
 
 
 export const LeftArrow = () => {
@@ -42,19 +41,39 @@ export const PlayBtn = () => {
         </svg>
     )
 }
-export const SwiperArrow = () => {
-    
-    const swiper = useSwiper();
+export const LocationIcon = () => {
     return (
-        <div className=''>
-            {/* <button onClick={() => swiper.slidePrev()} className=' duration-300 bg-[#1A1B39] rounded-full hover:bg-[#313EF7] w-10 h-10 flex items-center justify-center'><span className="min-w-[32px]  h-8 m-[10px] flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
-                <path d="M10 1L2 9L10 17" stroke="white" stroke-width="2" />
-            </svg></span></button>
-            <button onClick={() => swiper.slideNext()} className='duration-300 bg-[#1A1B39] rounded-full hover:bg-[#313EF7] w-10 h-10 flex items-center justify-center'><span className="min-w-[32px] h-8 m-[10px] flex items-center justify-center"><svg class="fill-white group-hover:fill-black" xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M0.599088 15.0669C0.354644 14.8224 0.232422 14.5113 0.232422 14.1336C0.232422 13.7558 0.354644 13.4447 0.599088 13.2002L5.79909 8.00023L0.599088 2.80023C0.354644 2.55578 0.232422 2.24467 0.232422 1.86689C0.232422 1.48912 0.354644 1.17801 0.599088 0.933561C0.843533 0.689116 1.15464 0.566895 1.53242 0.566895C1.9102 0.566895 2.22131 0.689116 2.46576 0.933561L8.59909 7.06689C8.73242 7.20023 8.82709 7.34467 8.88309 7.50023C8.93909 7.65578 8.96664 7.82245 8.96576 8.00023C8.96576 8.17801 8.93775 8.34467 8.88175 8.50023C8.82575 8.65578 8.73153 8.80023 8.59909 8.93356L2.46576 15.0669C2.22131 15.3113 1.9102 15.4336 1.53242 15.4336C1.15464 15.4336 0.843533 15.3113 0.599088 15.0669Z" /></svg></span></button> */}
-            <div className="absolute left-0 flex items-center justify-between w-full px-3 md:px-0 max-sm:bottom-9 max-md:bottom-14 md:top-1/2">
-                <button onClick={() => swiper.slidePrev()} className='flex items-center justify-center w-10 h-10 duration-300 border border-black rounded-full group prev-arrow hover:bg-orangeRed hover:border-orangeRed'><LeftArrow /></button>
-                <button onClick={() => swiper.slideNext()} className='flex items-center justify-center w-10 h-10 duration-300 border border-black rounded-full group next-arrow hover:bg-orangeRed hover:border-orangeRed'><RightArrow /></button>
-            </div>
-        </div>
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_1_2164)">
+                <rect x="0.832275" y="0.568848" width="40.9314" height="40.9314" rx="6" fill="#E67E22" />
+                <path d="M21.2979 20.4928C20.5796 20.4928 19.8908 20.2075 19.3829 19.6996C18.8749 19.1917 18.5896 18.5028 18.5896 17.7845C18.5896 17.0662 18.8749 16.3773 19.3829 15.8694C19.8908 15.3615 20.5796 15.0762 21.2979 15.0762C22.0162 15.0762 22.7051 15.3615 23.213 15.8694C23.7209 16.3773 24.0063 17.0662 24.0063 17.7845C24.0063 18.1402 23.9362 18.4923 23.8001 18.8209C23.664 19.1495 23.4645 19.4481 23.213 19.6996C22.9615 19.9511 22.663 20.1506 22.3344 20.2867C22.0058 20.4228 21.6536 20.4928 21.2979 20.4928ZM21.2979 10.2012C19.2867 10.2012 17.3579 11.0001 15.9357 12.4223C14.5136 13.8444 13.7146 15.7733 13.7146 17.7845C13.7146 23.472 21.2979 31.8678 21.2979 31.8678C21.2979 31.8678 28.8813 23.472 28.8813 17.7845C28.8813 15.7733 28.0823 13.8444 26.6602 12.4223C25.238 11.0001 23.3092 10.2012 21.2979 10.2012Z" fill="white" />
+            </g>
+            <defs>
+                <filter id="filter0_b_1_2164" x="-21.5825" y="-21.846" width="85.761" height="85.7608" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="11.2074" />
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_2164" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_2164" result="shape" />
+                </filter>
+            </defs>
+        </svg>
+    )
+}
+export const MailIcon = () => {
+    return (
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_1_2169)">
+                <rect x="0.832275" y="0.5" width="40.9314" height="40.9314" rx="6" fill="#E67E22" />
+                <path d="M12.6313 29.6327C12.0354 29.6327 11.5255 29.4207 11.1016 28.9967C10.6777 28.5728 10.4653 28.0625 10.4646 27.466V14.466C10.4646 13.8701 10.6769 13.3603 11.1016 12.9363C11.5263 12.5124 12.0362 12.3 12.6313 12.2993H29.9646C30.5604 12.2993 31.0707 12.5116 31.4953 12.9363C31.92 13.361 32.132 13.8709 32.1313 14.466V27.466C32.1313 28.0618 31.9193 28.5721 31.4953 28.9967C31.0714 29.4214 30.5612 29.6334 29.9646 29.6327H12.6313ZM21.2979 22.0493L29.9646 16.6326V14.466L21.2979 19.8826L12.6313 14.466V16.6326L21.2979 22.0493Z" fill="white" />
+            </g>
+            <defs>
+                <filter id="filter0_b_1_2169" x="-21.5825" y="-21.9148" width="85.761" height="85.7608" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="11.2074" />
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_2169" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_2169" result="shape" />
+                </filter>
+            </defs>
+        </svg>
     )
 }

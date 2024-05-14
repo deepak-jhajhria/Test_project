@@ -1,4 +1,4 @@
-import mountainImg from '../assets/images/webp/aboutUsSecImg.png'
+import mountainImg from '../assets/images/webp/aboutUsSecImg.webp'
 import { CommonBtn, Description, SectionHeading, SectionTitle } from './common/Common'
 const AboutUs = () => {
     return (

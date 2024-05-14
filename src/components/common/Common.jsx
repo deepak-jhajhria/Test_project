@@ -22,3 +22,13 @@ export const CommonBtn = (props) => {
         <button className={`flex items-center text-nowrap py-[13px] bg-orangeRed font-Poppins text-md sm:text-lg font-medium text-white border border-white rounded-full px-[26px] ${props.className}`}>{props.btnName}<img className={`${props.arrowClassName}`} src={BtnArrow} alt="btnArrow" /></button>
     )
 }
+export const Lable = (props) => {
+    return (
+        <label htmlFor="">{props.text}<span className='text-[#FF0000]'>*</span></label>
+    )
+}
+export const Input = (props) => {
+    return(
+        <input type={props.type} placeholder={props.placeholder} className={`w-full mt-[10px] rounded-md p-2 text-lg font-light border duration-300  focus:border-orangeRedLight border-lightGrey30 outline-none placeholder:text-gray30 font-Poppins ${props.className}`} />
+    )
+}
