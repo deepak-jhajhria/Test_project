@@ -20,7 +20,7 @@ const Services = () => {
     }, []);
     return (
         <section>
-            <div className="container py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[150px] relative md:px-20">
+            <div className="container max-w-[1295px] py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[150px] relative md:px-20">
                 <SectionTitle title='Services' />
                 <SectionHeading className='pt-4 text-center' headingBoldLeft='Your' headingLight='Gateway to' headingBoldRight='Aerial Excellence' />
                 <div className="my-6 sm:my-10 md:my-[50px]">

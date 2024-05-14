@@ -54,7 +54,7 @@ module.exports = {
         'gray30': '#4D4D4D',
         'gainsBore': '#E6E6E6',
         'paleOrange': '#FFF7EF',
-        // 'lightGrey': '#F2F2F2',
+        'lightGrey': '#F2F2F2',
         'darkGrey': '#221305',
       },
       backgroundImage: {

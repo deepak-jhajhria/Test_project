@@ -26,7 +26,7 @@ const BestExperienceSec = () => {
                 </div>
                 <div className="flex items-start justify-center gap-2 sm:gap-3 md:gap-5 mt-4 sm:mt-8 md:mt-[50px]">
                     {experienceSecData.map((item, index) => (
-                        <img onClick={() => handleTabClick(index)} className={`w-7 h-6 sm:w-10 sm:h-8 md:w-16 md:h-12 lg:w-[92px] object-cover lg:h-20 rounded-md ${activeTab === index ? "w-9 !h-8 sm:w-12 sm:h-10 md:!w-20 md:!h-16 lg:!w-[104px] lg:min-h-[93px] border border-orangeRed border-opacity-30 shadow-md" : ""}`} src={item.thumbnail} alt="" />
+                        <img key={index} onClick={() => handleTabClick(index)} className={`w-7 h-6 sm:w-10 sm:h-8 md:w-16 md:h-12 lg:w-[92px] object-cover lg:h-20 rounded-md ${activeTab === index ? "w-9 !h-8 sm:w-12 sm:h-10 md:!w-20 md:!h-16 lg:!w-[104px] lg:min-h-[93px] border border-orangeRed border-opacity-30 shadow-md" : ""}`} src={item.thumbnail} alt="" />
                     ))}
                 </div>
             </div>

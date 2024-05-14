@@ -8,8 +8,8 @@
 <path d="M17.5833 15.4165C17.3427 15.4895 17.0162 15.7688 16.8873 16.0094L16.7927 16.1856V19.0001V21.8145L16.8873 21.9907C17.1537 22.4891 17.8197 22.7727 18.3224 22.6009C18.4041 22.5751 19.5814 21.9821 20.9392 21.2817C23.6162 19.9024 23.6978 19.8551 23.8353 19.4426C23.99 18.9958 23.8869 18.4801 23.5904 18.1708C23.4443 18.0247 22.9373 17.7454 20.9392 16.7141C19.5771 16.0137 18.3869 15.4208 18.2966 15.395C18.0689 15.3348 17.8283 15.3391 17.5833 15.4165Z" fill="white"/>
 </g>
 <defs>
-<filter id="filter0_b_1_1962" x="-20.0317" y="-20.8095" width="79.619" height="79.619" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter0_b_1_1962" x="-20.0317" y="-20.8095" width="79.619" height="79.619" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feGaussianBlur in="BackgroundImageFix" stdDeviation="10.4048"/>
 <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_1962"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_1962" result="shape"/>

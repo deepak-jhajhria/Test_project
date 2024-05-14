@@ -22,7 +22,15 @@ import thePortfolioSecImageFirst from '../../assets/images/webp/portfolioSecDron
 import thePortfolioSecImageSecond from '../../assets/images/webp/portfolioSecDroneImageSecond.png'
 import thePortfolioSecImageThird from '../../assets/images/webp/portfolioSecDroneImageThird.png'
 import thePortfolioSecImageFourth from '../../assets/images/webp/portfolioSecDroneImageFour.png'
-
+import ratingStar from '../../assets/images/svg/ratingStar.svg'
+import userOne from '../../assets/images/webp/userOneImage.png'
+import userTwo from '../../assets/images/webp/userTwoImage.png'
+import userThree from '../../assets/images/webp/userThreeImage.png'
+import componyLogoFPl from '../../assets/images/webp/companyLogoFPL.png'
+import componyLogoXcel from '../../assets/images/webp/companyLogoXcel.png'
+import componyLogoDominion from '../../assets/images/webp/companyLogoDomination.png'
+import componyLogoNextEra from '../../assets/images/webp/companyLogoNextEra.png'
+import componyLogoNextPharma from '../../assets/images/webp/companyLogoPharma.png'
 export const navLinkData = [
     { linkName: "HOME", pathUrl: "" },
     { linkName: "ABOUT", pathUrl: "/about" },
@@ -76,4 +84,24 @@ export const thePortfolioSecData = [
     { id: 6, thumbnail: thePortfolioSecImageSecond, title: 'Drones in Live Event Broadcasting in UAE', description: 'The Rangers took home their first World Series win on Nov 1, but ...' },
     { id: 7, thumbnail: thePortfolioSecImageThird, title: 'Drones in Live Event Broadcasting in UAE', description: 'The Rangers took home their first World Series win on Nov 1, but ...' },
     { id: 8, thumbnail: thePortfolioSecImageFourth, title: 'Drones in Live Event Broadcasting in UAE', description: 'The Rangers took home their first World Series win on Nov 1, but ...' },
+]
+export const reviewSecData = [
+    { id: 1, userImage: userOne, userName: "Esther Howard", postDate: "10 Days Ago", rating: ratingStar, description: "Lorem ipsum dolor sit amet consectetur. Quis pretium amet sed morbi. Mi sit lacus augue habitant. Quis mus nibh sed consectetur." },
+    { id: 2, userImage: userTwo, userName: "Etonnante  Co", postDate: "20 Days Ago", rating: ratingStar, description: "Lorem ipsum dolor sit amet consectetur. Quis pretium amet sed morbi. Mi sit lacus augue habitant. Quis mus nibh sed consectetur." },
+    { id: 3, userImage: userThree, userName: "Courtney Henry", postDate: "15 Days Ago", rating: ratingStar, description: "Lorem ipsum dolor sit amet consectetur. Quis pretium amet sed morbi. Mi sit lacus augue habitant. Quis mus nibh sed consectetur." },
+    { id: 4, userImage: userOne, userName: "Esther Howard", postDate: "10 Days Ago", rating: ratingStar, description: "Lorem ipsum dolor sit amet consectetur. Quis pretium amet sed morbi. Mi sit lacus augue habitant. Quis mus nibh sed consectetur." },
+    { id: 5, userImage: userTwo, userName: "Etonnante  Co", postDate: "20 Days Ago", rating: ratingStar, description: "Lorem ipsum dolor sit amet consectetur. Quis pretium amet sed morbi. Mi sit lacus augue habitant. Quis mus nibh sed consectetur." },
+    { id: 6, userImage: userThree, userName: "Courtney Henry", postDate: "15 Days Ago", rating: ratingStar, description: "Lorem ipsum dolor sit amet consectetur. Quis pretium amet sed morbi. Mi sit lacus augue habitant. Quis mus nibh sed consectetur." },
+]
+export const ourClientData = [
+    { id: 1, companyLogo: componyLogoFPl },
+    { id: 2, companyLogo: componyLogoXcel },
+    { id: 3, companyLogo: componyLogoDominion },
+    { id: 4, companyLogo: componyLogoNextEra },
+    { id: 5, companyLogo: componyLogoNextPharma },
+    { id: 6, companyLogo: componyLogoFPl },
+    { id: 7, companyLogo: componyLogoXcel },
+    { id: 8, companyLogo: componyLogoDominion },
+    { id: 9, companyLogo: componyLogoNextEra },
+    { id: 10, companyLogo: componyLogoNextPharma },
 ]

@@ -23,18 +23,19 @@ const PortfolioSec = () => {
                     </div>
                 </div>
             </div>
-            <div className="ml-5 mt-6 sm:mt-10 md:mt-[50px]">
+            <div className="ml-5 mt-6 sm:mt-10 md:mt-[50px] min-h-[603px]">
                 <Swiper ref={sliderRefSecond} spaceBetween={16} modules={[Virtual, Pagination]} slidesPerView={1} loop={true}
                     breakpoints={{ 576: { slidesPerView: 2, }, 768: { slidesPerView: 4, }, }}>
                     {thePortfolioSecData.map((item, index) => (
-                        <SwiperSlide key={index} className="w-full !h-auto">
+                        <SwiperSlide key={index} className="w-full max-w-[362px] !h-auto">
                             <div className="relative group">
                                 <img className="w-full duration-500 min-h-[506px] group-hover:min-h-[603px] object-cover rounded-md2" src={item.thumbnail} alt={item.title} />
-                                <div className="absolute top-[70%] max-w-[319px] left-4 flex flex-col w-full h-full opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:duration-300">
+                                <div className="absolute z-10 top-[70%] max-w-[319px] left-4 flex flex-col w-full h-full opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:duration-300">
                                     <p className="text-xl font-medium text-white font-Poppins">{item.title}</p>
-                                    <Description className='mt-2' description={item.description} />
-                                    <a className="mt-4 text-lg font-medium font-Poppins text-orangeRed" href="/">Know more</a>
+                                    <Description className='mt-2 text-white opacity-70' description={item.description} />
+                                    <a className="mt-4 text-lg font-medium font-Poppins text-orangeRed" href="#">Know more</a>
                                 </div>
+                                <span className="absolute top-0 left-0 z-0 flex w-full h-full bg-black opacity-0 rounded-md2 group-hover:opacity-20"></span>
                             </div>
                         </SwiperSlide>
                     ))}
