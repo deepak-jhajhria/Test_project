@@ -1,3 +1,6 @@
+import { useSwiper } from "swiper/react"
+
+
 export const LeftArrow = () => {
     return (
         <svg className="duration-300 group-hover:stroke-white stroke-black" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,5 +40,21 @@ export const PlayBtn = () => {
                 </filter>
             </defs>
         </svg>
+    )
+}
+export const SwiperArrow = () => {
+    
+    const swiper = useSwiper();
+    return (
+        <div className=''>
+            {/* <button onClick={() => swiper.slidePrev()} className=' duration-300 bg-[#1A1B39] rounded-full hover:bg-[#313EF7] w-10 h-10 flex items-center justify-center'><span className="min-w-[32px]  h-8 m-[10px] flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
+                <path d="M10 1L2 9L10 17" stroke="white" stroke-width="2" />
+            </svg></span></button>
+            <button onClick={() => swiper.slideNext()} className='duration-300 bg-[#1A1B39] rounded-full hover:bg-[#313EF7] w-10 h-10 flex items-center justify-center'><span className="min-w-[32px] h-8 m-[10px] flex items-center justify-center"><svg class="fill-white group-hover:fill-black" xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M0.599088 15.0669C0.354644 14.8224 0.232422 14.5113 0.232422 14.1336C0.232422 13.7558 0.354644 13.4447 0.599088 13.2002L5.79909 8.00023L0.599088 2.80023C0.354644 2.55578 0.232422 2.24467 0.232422 1.86689C0.232422 1.48912 0.354644 1.17801 0.599088 0.933561C0.843533 0.689116 1.15464 0.566895 1.53242 0.566895C1.9102 0.566895 2.22131 0.689116 2.46576 0.933561L8.59909 7.06689C8.73242 7.20023 8.82709 7.34467 8.88309 7.50023C8.93909 7.65578 8.96664 7.82245 8.96576 8.00023C8.96576 8.17801 8.93775 8.34467 8.88175 8.50023C8.82575 8.65578 8.73153 8.80023 8.59909 8.93356L2.46576 15.0669C2.22131 15.3113 1.9102 15.4336 1.53242 15.4336C1.15464 15.4336 0.843533 15.3113 0.599088 15.0669Z" /></svg></span></button> */}
+            <div className="absolute left-0 flex items-center justify-between w-full px-3 md:px-0 max-sm:bottom-9 max-md:bottom-14 md:top-1/2">
+                <button onClick={() => swiper.slidePrev()} className='flex items-center justify-center w-10 h-10 duration-300 border border-black rounded-full group prev-arrow hover:bg-orangeRed hover:border-orangeRed'><LeftArrow /></button>
+                <button onClick={() => swiper.slideNext()} className='flex items-center justify-center w-10 h-10 duration-300 border border-black rounded-full group next-arrow hover:bg-orangeRed hover:border-orangeRed'><RightArrow /></button>
+            </div>
+        </div>
     )
 }

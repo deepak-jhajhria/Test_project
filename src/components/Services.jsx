@@ -1,13 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Description, SectionHeading, SectionTitle } from "./common/Common"
-import {  useRef } from "react";
+import { useRef } from "react";
 import { EffectFade, Pagination, Virtual } from "swiper/modules";
 import { serviceSecData } from "./common/Helper";
 import serviceSliderImg from '../assets/images/webp/serviceSecImg.png'
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
-import { LeftArrow, RightArrow } from "./common/Icons";
+import { LeftArrow, RightArrow, SwiperArrow } from "./common/Icons";
 import { useSliderNavigation } from "./common/Hooks";
 const Services = () => {
     const sliderRef = useRef(null);
@@ -37,10 +37,11 @@ const Services = () => {
                     </Swiper>
                 </div>
                 <div className="swiper-pagination mt-[10px]"><span className='swiper-pagination-bullet'></span></div>
-                <div className="absolute left-0 flex items-center justify-between w-full px-3 md:px-0 max-sm:bottom-9 max-md:bottom-14 md:top-1/2">
+                <SwiperArrow />
+                {/* <div className="absolute left-0 flex items-center justify-between w-full px-3 md:px-0 max-sm:bottom-9 max-md:bottom-14 md:top-1/2">
                     <button onClick={handlePrev} className='flex items-center justify-center w-10 h-10 duration-300 border border-black rounded-full group prev-arrow hover:bg-orangeRed hover:border-orangeRed'><LeftArrow /></button>
                     <button onClick={handleNext} className='flex items-center justify-center w-10 h-10 duration-300 border border-black rounded-full group next-arrow hover:bg-orangeRed hover:border-orangeRed'><RightArrow /></button>
-                </div>
+                </div> */}
             </div>
         </section>
     )
