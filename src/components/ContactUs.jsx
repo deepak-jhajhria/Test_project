@@ -10,17 +10,17 @@ const ContactUs = () => {
           <div className="flex flex-col lg:col-span-4 lg:max-w-[390px] mr-10 justify-center lg:justify-start items-center lg:items-start">
             <SectionHeading headingBoldLeft='Contact' headingLight='Us' />
             <Description className='mt-2 text-center lg:text-start' description="Are you interested in drones? Send us an email and let's get in touch!" />
-            <div className="flex items-center gap-5 mt-6">
+            <div className="flex flex-wrap items-center justify-center gap-3 mt-6 sm:gap-5">
               <LocationIcon />
               <a className="text-lg font-medium font-Poppins text-gray30" href="http://" target="_blank">Saint Petersburg, FL 33712</a>
             </div>
-            <div className="flex items-center gap-5 mt-6">
+            <div className="flex flex-wrap items-center justify-center gap-3 mt-6 sm:gap-5">
               <MailIcon />
               <a className="text-lg font-medium font-Poppins text-gray30" href="http://" target="_blank">wade@hartleyaerial.com</a>
             </div>
           </div>
-          <div className="flex justify-center col-span-1 lg:col-span-5">
-            <div className="relative z-10 w-full px-5 py-6 bg-white sm:px-8 sm:py-9 rounded-md2">
+          <div className="relative z-10 flex justify-center col-span-1 lg:col-span-5">
+            <div className="w-full px-5 py-6 bg-white sm:px-8 sm:py-9 rounded-md2">
               <div className="grid grid-cols-1 gap-5 sm:gap-8 sm:grid-cols-2">
                 <div className="flex flex-col">
                   <Lable text='First Name' />
