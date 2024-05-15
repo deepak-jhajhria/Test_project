@@ -50,6 +50,7 @@ module.exports = {
         'md': '0px -2px 29.9px 0px #E67E224D',
         'lg': '0px 6px 19.5px 0px #0000001A',
         'xl': '0px 1px 25.7px 0px #0000000D',
+        '2xl': '0px 1px 27.3px 0px #0000001A',
       },
       colors: {
         'orangeRed': '#E67E22',
