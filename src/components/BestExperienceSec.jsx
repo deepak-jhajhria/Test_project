@@ -7,7 +7,7 @@ const BestExperienceSec = () => {
     const { activeTab, handleTabClick } = useTabNavigation(3);
     return (
         <section className="bg-black sm:mx-6 sm:rounded-xl">
-            <div className="container py-10 sm:py-12 md:py-16 lg:py-[77px]">
+            <div className="container py-12 sm:py-14 md:py-16 lg:py-[77px]">
                 <SectionTitle className='text-white after:bg-white before:bg-white' title='THE BEST EXPERIENCE' />
                 <SectionHeading className='pt-4 text-center text-white' headingBoldLeft='Know' headingLight='More Through' headingBoldRight='Videos' />
                 <div className="relative bg-darkGrey mt-6 sm:mt-10 md:mt-[50px] p-1 sm:p-2 md:p-3 rounded-xl sm:rounded-2xl md:rounded-[22px]">

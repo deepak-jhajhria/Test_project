@@ -1,8 +1,8 @@
-import BtnArrow from '../../assets/images/svg/btnArrow.svg'
+import { BtnArrow } from "./Icons"
 
 export const SectionTitle = (props) => {
     return (
-        <div className="flex justify-center">
+        <div className={`flex justify-center ${props.positionText}`}>
             <p className={`relative inline-block font-medium text-black uppercase font-Poppins text-sm sm:text-md sectionTitle tracking-[5.1px] ${props.className}`}>{props.title}</p>
         </div>
     )
@@ -19,7 +19,7 @@ export const Description = (props) => {
 }
 export const CommonBtn = (props) => {
     return (
-        <button className={`flex items-center text-nowrap py-[13px] bg-orangeRed font-Poppins text-md sm:text-lg font-medium text-white border border-white rounded-full px-[26px] ${props.className}`}>{props.btnName}<img className={`${props.arrowClassName}`} src={BtnArrow} alt="btnArrow" /></button>
+        <button className={`flex items-center text-nowrap py-[13px] bg-orangeRed font-Poppins text-md sm:text-lg font-medium text-white border border-white rounded-full px-[26px] ${props.className}`}>{props.btnName} <span className={`${props.arrowClassName}`}><BtnArrow /></span></button>
     )
 }
 export const Lable = (props) => {
@@ -28,7 +28,7 @@ export const Lable = (props) => {
     )
 }
 export const Input = (props) => {
-    return(
+    return (
         <input type={props.type} placeholder={props.placeholder} className={`w-full mt-[10px] rounded-md p-2 text-lg font-light border duration-300  focus:border-orangeRedLight border-lightGrey30 outline-none placeholder:text-gray30 font-Poppins ${props.className}`} />
     )
 }

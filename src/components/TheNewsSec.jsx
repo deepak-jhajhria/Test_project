@@ -10,7 +10,7 @@ const TheNewsSec = () => {
     const sliderRef = useRef(null);
     const { handlePrev, handleNext } = useSliderNavigation(sliderRef);
     return (
-        <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[150px]">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:pt-[150px] xl:pb-[134px]">
             <div className="container">
                 <div className="flex flex-col items-center justify-between gap-7 sm:gap-10 sm:flex-row">
                     <div className="flex flex-col sm:items-start">
@@ -22,13 +22,13 @@ const TheNewsSec = () => {
                         <button onClick={handleNext} className='flex items-center justify-center w-10 h-10 duration-300 border border-black rounded-full group next-arrow hover:bg-orangeRed hover:border-orangeRed'><RightArrow /></button>
                     </div>
                 </div>
-                <Swiper className="mt-5 sm:mt-9" ref={sliderRef} spaceBetween={24} modules={[Virtual]} slidesPerView={1} loop={true}
+                <Swiper className="" ref={sliderRef} spaceBetween={24} modules={[Virtual]} slidesPerView={1} loop={true}
                     breakpoints={{
                         576: { slidesPerView: 2, }
                     }}>
                     {
                         theNewsSecData.map((item, index) => (
-                            <SwiperSlide key={index} className="max-w-[558px] border border-black border-opacity-10 rounded-md2 py-[14px] px-3 !h-auto">
+                            <SwiperSlide key={index} className="max-w-[558px] mt-5 sm:mt-9  lg:mb-4 border border-black duration-300 hover:shadow-lg border-opacity-10 rounded-md2 py-[14px] px-3 !h-auto">
                                 <div className="flex flex-col items-start justify-between h-full">
                                     <div className="flex flex-col ">
                                         <img className="rounded-md" src={item.thumbnail} alt="News Images" />

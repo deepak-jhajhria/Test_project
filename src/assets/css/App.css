@@ -1,25 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    transition: all 0.3s linear !important;
-}
 
-@font-face {
+/* @font-face {
     font-family: "Hurme Geometric Sans 1", sans-serif;
-    src: url(../font-family/hurme/HurmeGeometricSans1-Bold.woff);
+    src: url(../font-family/hurme/HurmeGeometricSans1-Light.otf);
     font-weight: bold;
-}
+} */
 
 @font-face {
     font-family: "Hurme Geometric Sans 1", sans-serif;
-    src: url(../font-family/hurme/HurmeGeometricSans1-Regular.woff);
+    src: url(../font-family/hurme/hurme-geometric-sans-no-one-bold.otf);
     font-weight: normal;
-}
-
-@font-face {
-    font-family: "Hurme Geometric Sans 1", sans-serif;
-    src: url(../font-family/hurme/HurmeGeometricSans1-Light.woff);
-    font-weight: 300;
 }
 
 .serviceSecSlide.swiper-slide {
@@ -44,4 +35,16 @@
 
 .swiper-pagination-bullet-active {
     background: #E67E22 !important;
+    position: relative !important;
+}
+.swiper-pagination-bullet-active::after {
+    content: '';
+    position: absolute !important;
+    background: #E67E22 !important;
+    border-radius: 100%;
+    width: 13.89px;
+    top: -2.7px;
+    left: -2.9px;
+    opacity: 0.2;
+    height: 13.89px;
 }

@@ -26,7 +26,7 @@ module.exports = {
     container: {
       padding: {
         DEFAULT: '14px',
-        'xl': '14px',
+        'xl': '12px',
       },
       center: true,
     },
@@ -36,23 +36,26 @@ module.exports = {
     },
     letterSpacing: {
     },
+    screens: {
+      'sm': '556px',
+      'md': '768px',
+      'lg': '991px',
+      'xl': '1140px',
+    },
     extend: {
-      screens: {
-        'sm': '556px',
-        'md': '768px',
-        'lg': '991px',
-        'xl': '1140px',
-      },
       lineHeight: {
       },
       boxShadow: {
         'sm': '0px 4px 15.6px 0px #0000001A',
         'md': '0px -2px 29.9px 0px #E67E224D',
+        'lg': '0px 6px 19.5px 0px #0000001A',
+        'xl': '0px 1px 25.7px 0px #0000000D',
       },
       colors: {
         'orangeRed': '#E67E22',
         'orangeRedLight': '#F2BE90',
         'gray30': '#4D4D4D',
+        'gray40': '#A0A0A0',
         'gainsBore': '#E6E6E6',
         'paleOrange': '#FFF7EF',
         'lightGrey': '#F2F2F2',

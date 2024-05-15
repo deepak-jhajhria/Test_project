@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer components{
   .sectionTitle{
-    @apply after:absolute px-8 after:bg-black after:w-[22px] after:h-[2.36px] after:rounded-full after:left-0 after:top-2.5 before:absolute before:bg-black before:w-[22px] before:h-[2.36px] before:rounded-full before:right-0 before:top-2.5;
+    @apply after:absolute px-[26px] text-nowrap sm:px-8 after:bg-black after:w-5 sm:after:w-[22px] after:h-[2.36px] after:rounded-full after:left-0 after:top-2.5 before:absolute before:bg-black before:w-5 sm:before:w-[22px] before:h-[2.36px] before:rounded-full before:right-0 before:top-2.5;
   }
 }
 
