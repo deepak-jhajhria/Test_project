@@ -14,13 +14,13 @@ const NavBar = () => {
                     {
                         navLinkData.map((item, index) => (
                             <li key={index}>
-                                <a className="font-normal text-white text-md" href={item.pathUrl} onClick={() => setOpen(false)}>{item.linkName}</a>
+                                <a className="font-normal text-white text-md links" href={item.pathUrl} onClick={() => setOpen(false)}>{item.linkName}</a>
                             </li>
                         ))
                     }
-                    <li className="lg:hidden"><button className="flex items-center px-5 py-3 font-medium text-white border border-white rounded-full font-Poppins text-md">Contact <span><BtnArrow /></span></button></li>
+                    <li className="lg:hidden"><button className="flex items-center px-5 py-3 font-medium text-white duration-300 border border-white rounded-full hover:border-orangeRed hover:bg-orangeRed font-Poppins text-md">Contact <span><BtnArrow /></span></button></li>
                 </ul>
-                <button className="hidden lg:flex items-center py-[15px] font-Poppins text-md sm:text-lg font-medium text-white border border-white rounded-full px-[27px]">Contact <span><BtnArrow /></span></button>
+                <button className="hidden lg:flex items-center duration-300 hover:bg-orangeRed hover:border-orangeRed  py-[15px] font-Poppins text-md sm:text-lg font-medium text-white border border-white rounded-full px-[27px]">Contact <span><BtnArrow /></span></button>
                 <div className='relative z-[110] mx-2 sm:mx-3 lg:hidden'>
                     <Hamburger toggled={isOpen} toggle={setOpen} size={32} rounded distance="sm" direction='right' duration={0.5} color='#FFF' />
                 </div>

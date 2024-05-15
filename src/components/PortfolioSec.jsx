@@ -23,8 +23,8 @@ const PortfolioSec = () => {
                     </div>
                 </div>
             </div>
-            <div className="ml-5 mt-6 sm:mt-10 md:mt-[50px] min-h-[550px] lg:min-h-[603px]">
-                <Swiper ref={sliderRef} spaceBetween={16} modules={[Virtual]} slidesPerView={1} loop={true}
+            <div className=" mx-2 sm:mr-0 sm:ml-5 mt-6 sm:mt-10 md:mt-[50px] min-h-[550px] lg:min-h-[603px]">
+                <Swiper ref={sliderRef} spaceBetween={16} modules={[Virtual]} slidesPerView={1} loop={true} autoplay={true} speed={1000} centerMode={true}
                     breakpoints={{556: { slidesPerView: 2, }, 920: { slidesPerView: 3, }, 1240: { slidesPerView: 4, }, }}>
                     {thePortfolioSecData.map((item, index) => (
                         <SwiperSlide key={index} className="w-full max-w-[362px] !h-auto">

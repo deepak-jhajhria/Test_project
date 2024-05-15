@@ -157,6 +157,37 @@ export const BestExperienceSecDottedVector = () => {
         </svg>
     )
 }
+export const ContactSecDottedVector = () => {
+    return (
+        <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="157.021" cy="157.317" r="2.62088" transform="rotate(-180 157.021 157.317)" fill="#E67E22" />
+            <circle cx="118.581" cy="157.317" r="2.62088" transform="rotate(-180 118.581 157.317)" fill="#E67E22" />
+            <circle cx="80.1416" cy="157.317" r="2.62088" transform="rotate(-180 80.1416 157.317)" fill="#E67E22" />
+            <circle cx="41.7021" cy="157.317" r="2.62088" transform="rotate(-180 41.7021 157.317)" fill="#E67E22" />
+            <circle cx="3.26242" cy="157.317" r="2.62088" transform="rotate(-180 3.26242 157.317)" fill="#E67E22" />
+            <circle cx="157.021" cy="118.877" r="2.62088" transform="rotate(-180 157.021 118.877)" fill="#E67E22" />
+            <circle cx="118.581" cy="118.877" r="2.62088" transform="rotate(-180 118.581 118.877)" fill="#E67E22" />
+            <circle cx="80.1416" cy="118.877" r="2.62088" transform="rotate(-180 80.1416 118.877)" fill="#E67E22" />
+            <circle cx="41.7021" cy="118.877" r="2.62088" transform="rotate(-180 41.7021 118.877)" fill="#E67E22" />
+            <circle cx="3.26242" cy="118.877" r="2.62088" transform="rotate(-180 3.26242 118.877)" fill="#E67E22" />
+            <circle cx="157.021" cy="80.4377" r="2.62088" transform="rotate(-180 157.021 80.4377)" fill="#E67E22" />
+            <circle cx="118.581" cy="80.4377" r="2.62088" transform="rotate(-180 118.581 80.4377)" fill="#E67E22" />
+            <circle cx="80.1416" cy="80.4377" r="2.62088" transform="rotate(-180 80.1416 80.4377)" fill="#E67E22" />
+            <circle cx="41.7021" cy="80.4377" r="2.62088" transform="rotate(-180 41.7021 80.4377)" fill="#E67E22" />
+            <circle cx="3.26242" cy="80.4377" r="2.62088" transform="rotate(-180 3.26242 80.4377)" fill="#E67E22" />
+            <circle cx="157.021" cy="41.9983" r="2.62088" transform="rotate(-180 157.021 41.9983)" fill="#E67E22" />
+            <circle cx="118.581" cy="41.9983" r="2.62088" transform="rotate(-180 118.581 41.9983)" fill="#E67E22" />
+            <circle cx="80.1416" cy="41.9983" r="2.62088" transform="rotate(-180 80.1416 41.9983)" fill="#E67E22" />
+            <circle cx="41.7021" cy="41.9983" r="2.62088" transform="rotate(-180 41.7021 41.9983)" fill="#E67E22" />
+            <circle cx="3.26242" cy="41.9983" r="2.62088" transform="rotate(-180 3.26242 41.9983)" fill="#E67E22" />
+            <circle cx="157.021" cy="3.55881" r="2.62088" transform="rotate(-180 157.021 3.55881)" fill="#E67E22" />
+            <circle cx="118.581" cy="3.55881" r="2.62088" transform="rotate(-180 118.581 3.55881)" fill="#E67E22" />
+            <circle cx="80.1416" cy="3.55881" r="2.62088" transform="rotate(-180 80.1416 3.55881)" fill="#E67E22" />
+            <circle cx="41.7021" cy="3.55881" r="2.62088" transform="rotate(-180 41.7021 3.55881)" fill="#E67E22" />
+            <circle cx="3.26242" cy="3.55881" r="2.62088" transform="rotate(-180 3.26242 3.55881)" fill="#E67E22" />
+        </svg>
+    )
+}
 export const BackToTopIcon = () => {
     return (
         <svg className="w-3 duration-300 group-hover:fill-orangeRed fill-white" viewBox="0 0 384 512">

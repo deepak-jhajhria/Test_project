@@ -1,5 +1,5 @@
 import { CommonBtn, Description, Ellipse, Input, Lable, SectionHeading, SectionTitle } from "./common/Common"
-import { LocationIcon, MailIcon } from "./common/Icons"
+import { ContactSecDottedVector, LocationIcon, MailIcon } from "./common/Icons"
 import vector from '../assets/images/webp/commonVector.webp'
 
 const ContactUs = () => {
@@ -19,7 +19,7 @@ const ContactUs = () => {
               <a className="text-lg font-medium font-Poppins text-gray30" href="http://" target="_blank">wade@hartleyaerial.com</a>
             </div>
           </div>
-          <div className="px-5 py-6 bg-white sm:px-8 lg:col-span-5 sm:py-9 rounded-md2">
+          <div className="relative z-10 col-span-1 px-5 py-6 bg-white sm:px-8 lg:col-span-5 sm:py-9 rounded-md2">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               <div className="flex flex-col">
                 <Lable text='First Name' />
@@ -52,9 +52,10 @@ const ContactUs = () => {
               <CommonBtn className='' arrowClassName='hidden' btnName='Submit' />
             </div>
           </div>
+          <span className="absolute z-0 right-16 top-20"><ContactSecDottedVector /></span>
         </div>
       </div>
-      <Ellipse className='z-0 -left-32 top-[60%]'/>
+      <Ellipse className='z-0 -left-32 top-[60%]' />
       <img className='absolute left-0 z-10 top-1/2 max-xl:hidden' src={vector} alt="vector ellipse" />
     </section>
   )

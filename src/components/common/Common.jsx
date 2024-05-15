@@ -29,7 +29,7 @@ export const Lable = (props) => {
 }
 export const Input = (props) => {
     return (
-        <input type={props.type} placeholder={props.placeholder} className={`w-full mt-[10px] rounded-md p-2 text-lg font-light border duration-300  focus:border-orangeRedLight border-lightGrey30 outline-none placeholder:text-gray30 font-Poppins ${props.className}`} />
+        <input type={props.type} placeholder={props.placeholder} className={`w-full mt-[10px] rounded-md p-2 text-lg font-light border duration-300  focus:border-orangeRedLight border-lightGrey30 outline-none placeholder:text-gray30 font-Poppins ${props.className}`} required/>
     )
 }
 export const Ellipse = (props) => {
@@ -39,6 +39,6 @@ export const Ellipse = (props) => {
 }
 export const Link = (props) => {
     return (
-        <a href={props.href} className={`font-Poppins font-normal text-md text-gray40 ${props.className}`}>{props.linkText}</a>
+        <a href={props.href} className={`font-Poppins links duration-300 font-normal text-md text-gray40 ${props.className}`}>{props.linkText}</a>
     )
 }
