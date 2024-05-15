@@ -20,7 +20,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="relative z-10 flex justify-center col-span-1 lg:col-span-5">
-            <div className="w-full px-5 py-6 bg-white sm:px-8 sm:py-9 rounded-md2">
+            <form className="w-full px-5 py-6 bg-white sm:px-8 sm:py-9 rounded-md2">
               <div className="grid grid-cols-1 gap-5 sm:gap-8 sm:grid-cols-2">
                 <div className="flex flex-col">
                   <Lable text='First Name' />
@@ -50,9 +50,9 @@ const ContactUs = () => {
                 <textarea className="w-full h-28 sm:h-[140px] mt-[10px] rounded-md p-2 text-lg font-light border duration-300  focus:border-orangeRedLight border-lightGrey30 outline-none placeholder:text-gray30 font-Poppins" name="" id=""></textarea>
               </div>
               <div className="mt-6 sm:mt-11">
-                <CommonBtn className='' arrowClassName='hidden' btnName='Submit' />
+                <CommonBtn type='submit' className='' arrowClassName='hidden' btnName='Submit' />
               </div>
-            </div>
+            </form>
           </div>
           <span className="absolute z-0 right-16 top-20 max-lg:hidden"><ContactSecDottedVector /></span>
         </div>
