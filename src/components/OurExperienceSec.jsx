@@ -1,5 +1,5 @@
 import droneProfessionalImage from '../assets/images/webp/ourExpertiseSecImg.webp'
-import droneProfessionalImageWithVector from '../assets/images/webp/ourExpertiseSecImg.png'
+import droneProfessionalImageWithVector from '../assets/images/webp/ourExpertiseSecImgWithVector.webp'
 import { CommonBtn, Description, SectionHeading, SectionTitle } from './common/Common'
 const OurExperienceSec = () => {
     return (

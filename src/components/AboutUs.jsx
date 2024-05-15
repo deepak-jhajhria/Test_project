@@ -1,5 +1,5 @@
 import mountainImg from '../assets/images/webp/aboutUsSecImg.webp'
-import mountainImgWithoutEllipse from '../assets/images/webp/aboutUsSecImg.png'
+import aboutUsSecImgWithoutVector from '../assets/images/webp/aboutUsSecImgWithoutVector.webp'
 import { CommonBtn, Description, SectionHeading, SectionTitle } from './common/Common'
 const AboutUs = () => {
     return (
@@ -8,7 +8,7 @@ const AboutUs = () => {
                 <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-7 md:gap-10 xl:gap-14">
                     <div className='relative flex justify-center order-2 lg:col-span-4 lg:order-1'>
                         <img className='hidden w-100 lg:block' src={mountainImg} alt="mountainImg" />
-                        <img className='block w-100 lg:hidden' src={mountainImgWithoutEllipse} alt="mountainImg" />
+                        <img className='block w-100 lg:hidden' src={aboutUsSecImgWithoutVector} alt="mountainImg" />
                     </div>
                     <div className='flex lg:col-span-3 flex-col lg:max-w-[462px] order-1 lg:order-2'>
                         <SectionTitle positionText='lg:justify-start' title='About Us' />
