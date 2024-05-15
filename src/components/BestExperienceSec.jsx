@@ -30,7 +30,7 @@ const BestExperienceSec = () => {
                     </div>
                 </div>
             </div>
-            <span className="absolute left-16 -top-[84px]"><BestExperienceSecDottedVector /></span>
+            <span className="absolute left-16 -top-[84px] max-lg:hidden"><BestExperienceSecDottedVector /></span>
             <Ellipse className='z-10 -left-32 top-1/4'/>
             <img className='absolute -left-12 top-1/2 max-xl:hidden' src={vector} alt="vector ellipse" />
         </section>
