@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Description, SectionHeading, SectionTitle } from "./common/Common"
+import { Description, Ellipse, SectionHeading, SectionTitle } from "./common/Common"
 import { useRef } from "react";
 import { EffectFade, Pagination, Virtual } from "swiper/modules";
 import { serviceSecData } from "./common/Helper";
@@ -9,11 +9,13 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import { LeftArrow, RightArrow } from "./common/Icons";
 import { useSliderNavigation } from "./common/Hooks";
+import vectorRight from '../assets/images/webp/commonVectorRight.webp'
+
 const Services = () => {
     const sliderRef = useRef(null);
     const { handlePrev, handleNext } = useSliderNavigation(sliderRef);
     return (
-        <section>
+        <section className="relative overflow-x-clip">
             <div className="container max-w-[1320px] py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[150px] relative md:px-20">
                 <SectionTitle title='Services' />
                 <SectionHeading className='pt-4 text-center' headingBoldLeft='Your' headingLight='Gateway to' headingBoldRight='Aerial Excellence' />
@@ -42,6 +44,8 @@ const Services = () => {
                     <button onClick={handleNext} className='flex items-center justify-center w-10 h-10 duration-300 border border-black rounded-full group next-arrow hover:bg-orangeRed hover:border-orangeRed'><RightArrow /></button>
                 </div>
             </div>
+            <Ellipse className='-right-32 top-1/4'/>
+            <img className='absolute right-0 top-[59%] z-10 max-xl:hidden' src={vectorRight} alt="vector ellipse" />
         </section>
     )
 }

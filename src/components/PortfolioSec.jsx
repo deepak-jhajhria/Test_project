@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Description, SectionHeading, SectionTitle } from "./common/Common"
+import { Description, Ellipse, SectionHeading, SectionTitle } from "./common/Common"
 import { LeftArrow, RightArrow } from "./common/Icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { thePortfolioSecData } from "./common/Helper";
@@ -10,7 +10,7 @@ const PortfolioSec = () => {
     const sliderRef = useRef(null);
     const { handlePrev, handleNext } = useSliderNavigation(sliderRef);
     return (
-        <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[150px]">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[150px] relative overflow-x-clip">
             <div className="container xl:my-6">
                 <div className="flex flex-col items-center justify-between gap-7 sm:gap-10 sm:flex-row">
                     <div className="flex flex-col sm:items-start">
@@ -41,6 +41,8 @@ const PortfolioSec = () => {
                     ))}
                 </Swiper>
             </div>
+            <Ellipse className='z-0 -left-16 top-3/4'/>
+            <Ellipse className='z-0 -right-16 top-[60%]'/>
         </section>
     )
 }

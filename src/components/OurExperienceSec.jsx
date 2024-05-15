@@ -1,10 +1,12 @@
 import droneProfessionalImage from '../assets/images/webp/ourExpertiseSecImg.webp'
 import droneProfessionalImageWithVector from '../assets/images/webp/ourExpertiseSecImgWithVector.webp'
-import { CommonBtn, Description, SectionHeading, SectionTitle } from './common/Common'
+import { CommonBtn, Description, Ellipse, SectionHeading, SectionTitle } from './common/Common'
+import vectorRight from '../assets/images/webp/commonVectorRight.webp'
+
 const OurExperienceSec = () => {
     return (
-        <section className="bg-paleOrange">
-            <div className="container xl:px-2 py-12 sm:py-14 md:py-16 lg:py-[90px]">
+        <section className="relative bg-paleOrange overflow-x-clip">
+            <div className="container xl:px-2 py-12 sm:py-14 md:py-16 lg:py-[90px] relative z-10">
                 <div className="grid items-center grid-cols-1 lg:grid-cols-7">
                     <div className='relative flex justify-center order-2 mt-8 lg:mr-8 lg:col-span-4 lg:order-1 lg:justify-start'>
                         <img className='w-100 lg:hidden' src={droneProfessionalImage} alt="droneProfessionalImage" />
@@ -24,6 +26,8 @@ const OurExperienceSec = () => {
                     </div>
                 </div>
             </div>
+            <Ellipse className='z-10 -left-32 top-[40%]'/>
+            <img className='absolute right-0 top-[40%] max-xl:hidden' src={vectorRight} alt="vector ellipse" />
         </section>
     )
 }

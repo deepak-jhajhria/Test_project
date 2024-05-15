@@ -109,3 +109,51 @@ export const YouTubeIcon = () => {
         </svg>
     )
 }
+export const ChooseUsSecEllipse = () => {
+    return (
+        <svg width="346" height="1079" viewBox="0 0 346 1079" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_1_2002)">
+                <circle cx="321.778" cy="321.221" r="71" fill="#E67E22" />
+            </g>
+            <path opacity="0.5" d="M528.778 1078L382.785 1047.32C268.999 1023.41 221.212 887.272 295.086 797.487L298.644 793.163C333.59 750.691 334.317 689.637 300.392 646.345V646.345C214.737 537.038 264.174 375.838 396.383 333.345L469.015 310" stroke="#E67E22" stroke-width="2" />
+            <defs>
+                <filter id="filter0_f_1_2002" x="0.877838" y="0.320953" width="641.8" height="641.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="124.95" result="effect1_foregroundBlur_1_2002" />
+                </filter>
+            </defs>
+        </svg>
+    )
+}
+export const ChooseUsSecDottedVector = () => {
+    return (
+        <svg width="111" height="111" viewBox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="107.018" cy="107.24" r="3.52358" transform="rotate(-180 107.018 107.24)" fill="#E67E22" />
+            <circle cx="55.3392" cy="107.24" r="3.52358" transform="rotate(-180 55.3392 107.24)" fill="#E67E22" />
+            <circle cx="3.66001" cy="107.24" r="3.52358" transform="rotate(-180 3.66001 107.24)" fill="#E67E22" />
+            <circle cx="107.018" cy="55.5604" r="3.52358" transform="rotate(-180 107.018 55.5604)" fill="#E67E22" />
+            <circle cx="55.3392" cy="55.5604" r="3.52358" transform="rotate(-180 55.3392 55.5604)" fill="#E67E22" />
+            <circle cx="3.66001" cy="55.5604" r="3.52358" transform="rotate(-180 3.66001 55.5604)" fill="#E67E22" />
+            <circle cx="107.018" cy="3.88267" r="3.52358" transform="rotate(-180 107.018 3.88267)" fill="#E67E22" />
+            <circle cx="55.3392" cy="3.88072" r="3.52358" transform="rotate(-180 55.3392 3.88072)" fill="#E67E22" />
+            <circle cx="3.66001" cy="3.88072" r="3.52358" transform="rotate(-180 3.66001 3.88072)" fill="#E67E22" />
+        </svg>
+    )
+}
+export const BestExperienceSecDottedVector = () => {
+    return (
+        <svg width="45" height="160" viewBox="0 0 45 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="41.8383" cy="156.879" r="2.62088" transform="rotate(-180 41.8383 156.879)" fill="#E67E22" />
+            <circle cx="3.39865" cy="156.879" r="2.62088" transform="rotate(-180 3.39865 156.879)" fill="#E67E22" />
+            <circle cx="41.8383" cy="118.44" r="2.62088" transform="rotate(-180 41.8383 118.44)" fill="#E67E22" />
+            <circle cx="3.39865" cy="118.44" r="2.62088" transform="rotate(-180 3.39865 118.44)" fill="#E67E22" />
+            <circle cx="41.8383" cy="80.0002" r="2.62088" transform="rotate(-180 41.8383 80.0002)" fill="#E67E22" />
+            <circle cx="3.39865" cy="80.0002" r="2.62088" transform="rotate(-180 3.39865 80.0002)" fill="#E67E22" />
+            <circle cx="41.8383" cy="41.5608" r="2.62088" transform="rotate(-180 41.8383 41.5608)" fill="#E67E22" />
+            <circle cx="3.39865" cy="41.5608" r="2.62088" transform="rotate(-180 3.39865 41.5608)" fill="#E67E22" />
+            <circle cx="41.8383" cy="3.12131" r="2.62088" transform="rotate(-180 41.8383 3.12131)" fill="#E67E22" />
+            <circle cx="3.39865" cy="3.12131" r="2.62088" transform="rotate(-180 3.39865 3.12131)" fill="#E67E22" />
+        </svg>
+    )
+}

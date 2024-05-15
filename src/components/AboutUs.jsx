@@ -1,10 +1,11 @@
 import mountainImg from '../assets/images/webp/aboutUsSecImg.webp'
 import aboutUsSecImgWithoutVector from '../assets/images/webp/aboutUsSecImgWithoutVector.webp'
-import { CommonBtn, Description, SectionHeading, SectionTitle } from './common/Common'
+import vector from '../assets/images/webp/commonVector.webp'
+import { CommonBtn, Description, Ellipse, SectionHeading, SectionTitle } from './common/Common'
 const AboutUs = () => {
     return (
-        <section className=" bg-paleOrange">
-            <div className="container xl:px-2 py-12 sm:py-14 md:py-[62px]">
+        <section className="relative bg-paleOrange overflow-x-clip">
+            <div className="container xl:px-2 py-12 sm:py-14 md:py-[62px] relative z-20">
                 <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-7 md:gap-10 xl:gap-14">
                     <div className='relative flex justify-center order-2 lg:col-span-4 lg:order-1'>
                         <img className='hidden w-100 lg:block' src={mountainImg} alt="mountainImg" />
@@ -20,6 +21,8 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
+            <Ellipse className='-left-32 top-[40%]'/>
+            <img className='absolute left-0 top-1/2 max-xl:hidden' src={vector} alt="vector ellipse" />
         </section>
     )
 }

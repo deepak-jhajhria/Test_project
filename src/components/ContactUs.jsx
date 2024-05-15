@@ -1,9 +1,10 @@
-import { CommonBtn, Description, Input, Lable, SectionHeading, SectionTitle } from "./common/Common"
+import { CommonBtn, Description, Ellipse, Input, Lable, SectionHeading, SectionTitle } from "./common/Common"
 import { LocationIcon, MailIcon } from "./common/Icons"
+import vector from '../assets/images/webp/commonVector.webp'
 
 const ContactUs = () => {
   return (
-    <section className="bg-paleOrange">
+    <section className="relative bg-paleOrange overflow-x-clip">
       <div className="container py-12 sm:py-14 md:py-16 lg:pt-[101px] lg:pb-20">
         <div className="grid items-center gap-8 lg:gap-2 lg:grid-cols-9">
           <div className="flex flex-col lg:col-span-4 lg:max-w-[390px] mr-10 justify-center lg:justify-start items-center lg:items-start">
@@ -53,6 +54,8 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+      <Ellipse className='z-0 -left-32 top-[60%]'/>
+      <img className='absolute left-0 z-10 top-1/2 max-xl:hidden' src={vector} alt="vector ellipse" />
     </section>
   )
 }

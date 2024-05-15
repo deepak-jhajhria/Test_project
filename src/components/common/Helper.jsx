@@ -105,3 +105,27 @@ export const ourClientData = [
     { id: 9, companyLogo: componyLogoNextEra ,componyUrl:""},
     { id: 10, companyLogo: componyLogoNextPharma ,componyUrl:""},
 ]
+
+export const footerLinks = [
+    {
+        quickLinks:[
+            {id: 1, title: "Home", url: "#home"},
+            {id: 2, title: "About us", url: "#aboutUs"},
+            {id: 3, title: "Services", url: "#services"},
+            {id: 4, title: "Blog", url: "#blog"},
+        ]
+    },
+    {
+        aboutUs:[
+            {id: 1, title: "Why We are Best", url: "#"},
+            {id: 2, title: "What We Do", url: "#"},
+        ]
+    },
+    {
+        register:[
+            {id: 1, title: "Contact Us", url: "#contactUs"},
+            {id: 2, title: "Privacay and Policy", url: "#"},
+            {id: 3, title: "Terms and Condition", url: "#"},
+        ]
+    }
+]

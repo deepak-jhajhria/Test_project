@@ -32,3 +32,13 @@ export const Input = (props) => {
         <input type={props.type} placeholder={props.placeholder} className={`w-full mt-[10px] rounded-md p-2 text-lg font-light border duration-300  focus:border-orangeRedLight border-lightGrey30 outline-none placeholder:text-gray30 font-Poppins ${props.className}`} />
     )
 }
+export const Ellipse = (props) => {
+    return (
+        <span className={`absolute flex w-24 h-24 md:w-36 md:h-36 bg-orangeRed blur-[100px] ${props.className}`}></span>
+    )
+}
+export const Link = (props) => {
+    return (
+        <a href={props.href} className={`font-Poppins font-normal text-md text-gray40 ${props.className}`}>{props.linkText}</a>
+    )
+}

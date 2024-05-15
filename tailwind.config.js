@@ -59,12 +59,14 @@ module.exports = {
         'gainsBore': '#E6E6E6',
         'paleOrange': '#FFF7EF',
         'lightGrey': '#F2F2F2',
+        'whiteGrey': '#F1F1F1',
         'lightGrey30': '#E6E6E6',
         'darkGrey': '#221305',
         'darkBlack': '#111111',
       },
       backgroundImage: {
         "bgHero": "url('../src/assets/images/webp/heroSecBgImg.webp')",
+        'preloaderTextGradient': "linear-gradient(34.36deg, #7F04E3 17.88%, #FF006B 76.63%)",
       },
       backgroundSize: {
         "BgSize": "100% 100%"
