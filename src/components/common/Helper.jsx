@@ -32,10 +32,10 @@ import componyLogoDominion from '../../assets/images/webp/companyLogoDomination.
 import componyLogoNextEra from '../../assets/images/webp/companyLogoNextEra.webp'
 import componyLogoNextPharma from '../../assets/images/webp/companyLogoPharma.webp'
 export const navLinkData = [
-    { linkName: "HOME", pathUrl: "" },
-    { linkName: "ABOUT", pathUrl: "/about" },
-    { linkName: "SERVICES", pathUrl: "/contact" },
-    { linkName: "BLOG", pathUrl: "/contact" }
+    { linkName: "HOME", pathUrl: "#home" },
+    { linkName: "ABOUT", pathUrl: "#about" },
+    { linkName: "SERVICES", pathUrl: "#service" },
+    { linkName: "BLOG", pathUrl: "#blog" }
 ]
 
 export const chooseUsSecData = [

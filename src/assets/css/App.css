@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+*{
+    scroll-behavior: smooth;
+}
 /* @font-face {
     font-family: "Hurme Geometric Sans 1", sans-serif;
     src: url(../font-family/hurme/HurmeGeometricSans1-Light.otf);
@@ -11,6 +13,37 @@
     font-family: "Hurme Geometric Sans 1", sans-serif;
     src: url(../font-family/hurme/hurme-geometric-sans-no-one-bold.otf);
     font-weight: normal;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 12px;
+    box-shadow: inset 0 0 6px white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E67E22;
+    border-radius: 12px;
+    outline: unset;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 4px;
+    border-radius: 12px;
+    background: #ffff;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+    border-radius: 12px;
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #E67E22;
+    border-radius: 24px;
+    outline: unset;
 }
 
 .serviceSecSlide.swiper-slide {
@@ -37,6 +70,7 @@
     background: #E67E22 !important;
     position: relative !important;
 }
+
 .swiper-pagination-bullet-active::after {
     content: '';
     position: absolute !important;
@@ -47,4 +81,33 @@
     left: -2.9px;
     opacity: 0.2;
     height: 13.89px;
+}
+
+.loader::before,
+.loader::after {
+    animation: rotate9 1s infinite cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.loader::after {
+    animation-delay: .5s;
+}
+
+@keyframes rotate9 {
+
+    0%,
+    100% {
+        left: 50px;
+    }
+
+    25% {
+        transform: scale(.3);
+    }
+
+    50% {
+        left: 0;
+    }
+
+    75% {
+        transform: scale(1);
+    }
 }

@@ -1,5 +1,6 @@
 import '../src/assets/css/App.css';
 import AboutUs from './components/AboutUs';
+import BackToTop from './components/BackToTop';
 import BestExperienceSec from './components/BestExperienceSec';
 import ChooseUs from './components/ChooseUs';
 import ContactUs from './components/ContactUs';
@@ -31,6 +32,7 @@ function App() {
           <OurClientSec />
           <ContactUs />
           <Footer />
+          <BackToTop />
         </div>
       )}
     </>

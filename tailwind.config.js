@@ -66,7 +66,7 @@ module.exports = {
       },
       backgroundImage: {
         "bgHero": "url('../src/assets/images/webp/heroSecBgImg.webp')",
-        'preloaderTextGradient': "linear-gradient(34.36deg, #7F04E3 17.88%, #FF006B 76.63%)",
+        'preloaderTextGradient': "linear-gradient(34.36deg, #E67E22 17.88%, #E67E22 76.63%)",
       },
       backgroundSize: {
         "BgSize": "100% 100%"

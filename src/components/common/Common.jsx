@@ -19,7 +19,7 @@ export const Description = (props) => {
 }
 export const CommonBtn = (props) => {
     return (
-        <button className={`flex items-center text-nowrap py-[13px] bg-orangeRed font-Poppins text-md sm:text-lg font-medium text-white border border-white rounded-full px-[26px] ${props.className}`}>{props.btnName} <span className={`${props.arrowClassName}`}><BtnArrow /></span></button>
+        <button className={`flex items-center text-nowrap py-[13px] bg-orangeRed hover:text-orangeRed group hover:bg-white hover:border-orangeRed  duration-300 hover:shadow-xl font-Poppins text-md sm:text-lg font-medium text-white border border-white rounded-full px-[26px] ${props.className}`}>{props.btnName} <span className={`${props.arrowClassName}`}><BtnArrow /></span></button>
     )
 }
 export const Lable = (props) => {
