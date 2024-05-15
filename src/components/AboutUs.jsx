@@ -4,7 +4,7 @@ import vector from '../assets/images/webp/commonVector.webp'
 import { CommonBtn, Description, Ellipse, SectionHeading, SectionTitle } from './common/Common'
 const AboutUs = () => {
     return (
-        <section className="relative bg-paleOrange overflow-x-clip">
+        <section id='aboutUs' className="relative bg-paleOrange overflow-x-clip">
             <div className="container xl:px-2 py-12 sm:py-14 md:py-[62px] relative z-20">
                 <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-7 md:gap-10 xl:gap-14">
                     <div className='relative flex justify-center order-2 lg:col-span-4 lg:order-1'>

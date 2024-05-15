@@ -10,7 +10,7 @@ const TheNewsSec = () => {
     const sliderRef = useRef(null);
     const { handlePrev, handleNext } = useSliderNavigation(sliderRef);
     return (
-        <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:pt-[150px] xl:pb-[134px]">
+        <section id="blog" className="py-12 sm:py-16 md:py-20 lg:py-24 xl:pt-[150px] xl:pb-[134px]">
             <div className="container">
                 <div className="flex flex-col items-center justify-between gap-7 sm:gap-10 sm:flex-row">
                     <div className="flex flex-col sm:items-start">

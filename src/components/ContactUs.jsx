@@ -4,7 +4,7 @@ import vector from '../assets/images/webp/commonVector.webp'
 
 const ContactUs = () => {
   return (
-    <section className="relative bg-paleOrange overflow-x-clip">
+    <section id="contactUs" className="relative bg-paleOrange overflow-x-clip">
       <div className="container py-12 sm:py-14 md:py-16 lg:pt-[101px] lg:pb-20">
         <div className="grid items-center gap-8 lg:gap-2 lg:grid-cols-9">
           <div className="flex flex-col lg:col-span-4 lg:max-w-[390px] mr-10 justify-center lg:justify-start items-center lg:items-start">
@@ -19,40 +19,42 @@ const ContactUs = () => {
               <a className="text-lg font-medium font-Poppins text-gray30" href="http://" target="_blank">wade@hartleyaerial.com</a>
             </div>
           </div>
-          <div className="relative z-10 col-span-1 px-5 py-6 bg-white sm:px-8 lg:col-span-5 sm:py-9 rounded-md2">
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-              <div className="flex flex-col">
-                <Lable text='First Name' />
+          <div className="flex justify-center col-span-1 lg:col-span-5">
+            <div className="relative z-10 w-full px-5 py-6 bg-white sm:px-8 sm:py-9 rounded-md2">
+              <div className="grid grid-cols-1 gap-5 sm:gap-8 sm:grid-cols-2">
+                <div className="flex flex-col">
+                  <Lable text='First Name' />
+                  <Input type='' />
+                </div>
+                <div className="flex flex-col">
+                  <Lable text='Last Name' />
+                  <Input type='' />
+                </div>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-5 sm:gap-8 mt-5 sm:mt-[30px] grid-cols-1">
+                <div className="flex flex-col">
+                  <Lable text='Email' />
+                  <Input type='' />
+                </div>
+                <div className="flex flex-col">
+                  <Lable text='Phone Number' />
+                  <Input type='' />
+                </div>
+              </div>
+              <div className="mt-5 sm:mt-[30px]">
+                <Lable text='Subject' />
                 <Input type='' />
               </div>
-              <div className="flex flex-col">
-                <Lable text='Last Name' />
-                <Input type='' />
+              <div className="mt-5 sm:mt-[30px]">
+                <Lable text='Message' />
+                <textarea className="w-full h-28 sm:h-[140px] mt-[10px] rounded-md p-2 text-lg font-light border duration-300  focus:border-orangeRedLight border-lightGrey30 outline-none placeholder:text-gray30 font-Poppins" name="" id=""></textarea>
               </div>
-            </div>
-            <div className="grid sm:grid-cols-2 gap-8 mt-5 sm:mt-[30px] grid-cols-1">
-              <div className="flex flex-col">
-                <Lable text='Email' />
-                <Input type='' />
+              <div className="mt-6 sm:mt-11">
+                <CommonBtn className='' arrowClassName='hidden' btnName='Submit' />
               </div>
-              <div className="flex flex-col">
-                <Lable text='Phone Number' />
-                <Input type='' />
-              </div>
-            </div>
-            <div className="mt-5 sm:mt-[30px]">
-              <Lable text='Subject' />
-              <Input type='' />
-            </div>
-            <div className="mt-5 sm:mt-[30px]">
-              <Lable text='Message' />
-              <textarea className="w-full h-28 sm:h-[140px] mt-[10px] rounded-md p-2 text-lg font-light border duration-300  focus:border-orangeRedLight border-lightGrey30 outline-none placeholder:text-gray30 font-Poppins" name="" id=""></textarea>
-            </div>
-            <div className="mt-6 sm:mt-11">
-              <CommonBtn className='' arrowClassName='hidden' btnName='Submit' />
             </div>
           </div>
-          <span className="absolute z-0 right-16 top-20"><ContactSecDottedVector /></span>
+          <span className="absolute z-0 right-16 top-20 max-lg:hidden"><ContactSecDottedVector /></span>
         </div>
       </div>
       <Ellipse className='z-0 -left-32 top-[60%]' />

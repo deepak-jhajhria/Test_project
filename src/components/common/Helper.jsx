@@ -33,7 +33,7 @@ import componyLogoNextEra from '../../assets/images/webp/companyLogoNextEra.webp
 import componyLogoNextPharma from '../../assets/images/webp/companyLogoPharma.webp'
 export const navLinkData = [
     { linkName: "HOME", pathUrl: "#home" },
-    { linkName: "ABOUT", pathUrl: "#about" },
+    { linkName: "ABOUT", pathUrl: "#aboutUs" },
     { linkName: "SERVICES", pathUrl: "#service" },
     { linkName: "BLOG", pathUrl: "#blog" }
 ]
@@ -111,7 +111,7 @@ export const footerLinks = [
         quickLinks:[
             {id: 1, title: "Home", url: "#home"},
             {id: 2, title: "About us", url: "#aboutUs"},
-            {id: 3, title: "Services", url: "#services"},
+            {id: 3, title: "Services", url: "#service"},
             {id: 4, title: "Blog", url: "#blog"},
         ]
     },

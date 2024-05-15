@@ -15,7 +15,7 @@ const Services = () => {
     const sliderRef = useRef(null);
     const { handlePrev, handleNext } = useSliderNavigation(sliderRef);
     return (
-        <section className="relative overflow-x-clip">
+        <section id="service" className="relative overflow-x-clip">
             <div className="container max-w-[1320px] py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[150px] relative md:px-20">
                 <SectionTitle title='Services' />
                 <SectionHeading className='pt-4 text-center' headingBoldLeft='Your' headingLight='Gateway to' headingBoldRight='Aerial Excellence' />

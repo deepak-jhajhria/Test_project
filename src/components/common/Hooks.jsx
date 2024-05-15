@@ -7,7 +7,7 @@ export const usePreloader = () => {
         setTimeout(() => {
             setIsLoading(false);
             document.body.classList.remove("overflow-hidden")
-        }, 0);
+        }, 3000);
     }, []);
     return isLoading;
 };
