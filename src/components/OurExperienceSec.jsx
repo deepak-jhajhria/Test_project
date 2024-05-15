@@ -27,7 +27,7 @@ const OurExperienceSec = () => {
                 </div>
             </div>
             <Ellipse className='z-10 -left-32 top-[40%]'/>
-            <img className='absolute right-0 top-[40%] max-xl:hidden' src={vectorRight} alt="vector ellipse" />
+            <img className='absolute -right-5 top-[40%] max-xl:hidden' src={vectorRight} alt="vector ellipse" />
         </section>
     )
 }
